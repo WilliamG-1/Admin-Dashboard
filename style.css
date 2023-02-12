@@ -88,6 +88,25 @@ body{
     padding: 10px 20px;
     font-size: 18px;
 }
+.account_info{
+    display: flex;
+    align-items: center;
+    background-color: #ef767a;
+}
+.account_info .profile_info{
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    max-height: 100%;
+    column-gap: 20px;
+}
+.account_info .profile_info input {
+    display: inline;
+    height: 80%;
+    width: 10%;
+    border:none;
+}
+
 
 .upload_share{
     display: flex;

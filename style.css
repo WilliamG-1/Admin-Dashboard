@@ -23,4 +23,16 @@ body{
 }
 .content{
     background-color: rgb(216, 216, 223);
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    padding: 10px;
+    column-gap: 20px;
+}
+.projects{
+    border: 5px black solid;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+}
+.relevant{
+    border: 5px black solid;
 }

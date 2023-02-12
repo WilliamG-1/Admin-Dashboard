@@ -28,6 +28,43 @@ body{
     grid-template-rows: 4fr 5fr;
     grid-template-columns: 3fr 2fr;
 }
+
+.profile{
+    display: flex;
+    /* background-color: teal; */
+    padding: 15px;
+}
+.profile *{
+    /* background-color: aquamarine; */
+    flex: 1;
+}
+.profile .notification,
+.profile .profile_picture{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+.profile .notification input,
+.profile .profile_picture input{
+    height: 70px;
+    width: 70px;
+    object-fit: cover;
+    align-self: center;
+    flex: 0;
+    border: none;
+}
+.profile .notification input{
+    height: 40px;
+    width: 40px;
+}
+.profile .profile_name{
+    flex: 2;
+}
+.profile_name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .search{
     display: flex;
     padding: 24px;

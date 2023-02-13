@@ -15,11 +15,52 @@ body{
     grid-auto-rows: auto;
     background-color: rgb(156, 153, 153);
 }
+
+/* <================== Sidebar =====================> */
 .sidebar{
     background-color: var(--main-color);
     grid-row: 1 / -1;
-    min-width: 300px;
+    min-width: 240px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
 }
+.sidebar .dashboard_logo{
+    width: clamp(2rem, 2.5rem, 3rem);
+    height: auto;
+}
+.sidebar * {
+    border: 1px black solid;
+}
+.dashboard{
+    display: flex;
+    padding: 15px;
+    column-gap: 5%;
+}
+.dashboard .logo{
+    width: 55px;
+    height: 50px;
+    flex-shrink: 0;
+    display: grid;
+    grid-template: repeat(3, 1fr) / repeat(2, 1fr);
+    gap: 5%;
+}
+.dashboard .logo .big_rectangle{
+    grid-row: span 2;
+}
+.dashboard h1 {
+    flex: 7;
+}
+
+.sidebar li{
+    padding: 10px;
+    display: flex;
+    column-gap: 10%;
+}
+
+/* <================== Sidebar =====================> */
+
+
 /* <================= Header =====================> */
 .header{
     background-color: white;
@@ -130,6 +171,9 @@ body{
 
 
 
+
+
+/* <================= Main =======================> */
 .content{
     background-color: #FBF5F3;
     display: grid;
@@ -223,3 +267,4 @@ body{
 li h3{
     margin-bottom: 5px;
 }
+/* <================== Announcements and Trending Sidebar =====================> */

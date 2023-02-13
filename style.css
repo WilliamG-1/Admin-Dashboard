@@ -116,11 +116,11 @@ li .dashboard_logo{
     object-fit: cover;
     align-self: center;
     flex: 0;
-    border: none;
 }
 .profile .notification input{
-    height: 40px;
-    width: 40px;
+    height: 45px;
+    width: 45px;
+    margin-left: 70px;
 }
 .profile .profile_name{
     flex: 2;
@@ -174,14 +174,14 @@ li .dashboard_logo{
 
 .upload_share{
     display: flex;
-
+    justify-content: flex-end;
 }
 .upload_share * {
-    min-width: 80px;
+    width: 130px;
+    height: 40px;
     color: white;
     background-color: var(--highlight-color);
-    flex: 1;
-    margin: 40px;
+    margin: 20px;
     border-radius: 30px;
     text-align: center;
     line-height: 250%;

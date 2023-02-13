@@ -1,3 +1,7 @@
+@font-face {
+    font-family: varela;
+    src: url(Assets/VarelaRound-Regular.ttf);
+}
 :root{
     --main-color: #ef767a;
     --highlight-color: #456990;
@@ -6,6 +10,7 @@
     margin: 0;
     padding: 0;
     color: black;
+    font-family: varela;
 }
 body{
     min-height: 100vh;

@@ -140,11 +140,10 @@ li .dashboard_logo{
     
 }
 .search .search_icon{
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     flex-basis: 7%;
     flex-shrink: 1;
-    background-color: white;
     object-fit: contain;
     border: none;
     align-self: center;

@@ -19,6 +19,7 @@ body{
     grid-template-rows: 220px 5fr;
     grid-auto-rows: auto;
     background-color: rgb(156, 153, 153);
+    row-gap: 1.5px;
 }
 
 /* <================== Sidebar =====================> */
@@ -30,6 +31,7 @@ body{
     flex-direction: column;
     row-gap: 50px;
     padding: 25px;
+
 }
 .sidebar * {
     color: white;
@@ -87,11 +89,12 @@ li .dashboard_logo{
 
 /* <================= Header =====================> */
 .header{
-    background-color: white;
+    background-color: rgb(247, 247, 247);
     grid-area: 1 / 2 / 2 / -1;
     display: grid;
     grid-template-rows: 4fr 5fr;
     grid-template-columns: 3fr 2fr;
+    box-shadow: 5px 5px 10px black;
 }
 
 .profile{
@@ -204,6 +207,7 @@ li .dashboard_logo{
     padding: 10px;
     column-gap: 20px;
     row-gap: 10px;
+    box-shadow: 5px 10px 10px black;
 }
 .projects{
     /* border: 5px black solid; */
@@ -225,6 +229,7 @@ li .dashboard_logo{
     box-shadow: 2px 2px 4px black;
     color: black;
     transition: 0.4s;
+    background-color: rgb(247, 247, 247);
 }
 .project:hover{
     transform: scale(1.02);
@@ -255,6 +260,17 @@ li .dashboard_logo{
     margin-top: 10px;
 }
 
+.trending_text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 5px;
+}
+.profile_container{
+    display: flex;
+    column-gap: 25px;
+}
+
 /* <================== Announcements and Trending Sidebar =====================> */
 .relevant{
     /* border: 5px black solid; */
@@ -271,10 +287,12 @@ li .dashboard_logo{
 .relevant h2 {
     padding-bottom: 10px;
 }
-.relevant > div > div{
-    padding: 30px;
+.relevant > div > .trending_text,
+.relevant > div > .announcements_text{
+    padding: 35px;
     border-radius: 20px;
     box-shadow: 2px 2px 4px black;
+    background-color: rgb(247, 247, 247);
 }
 .relevant>div>div>ul{
     height: 100%;
@@ -296,5 +314,35 @@ li .dashboard_logo{
 }
 li h3{
     margin-bottom: 5px;
+}
+.trending_text .profile_pic{
+    border-radius: 100%;
+    width: 65px;
+    height: 65px;
+    
+}
+.trending_text .text{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 5px;
+}
+.text p{
+    font-size: 1.1rem;
+    color: rgb(92, 92, 92);
+} 
+
+#owl{
+    background-color: rgb(22, 84, 165);
+}
+#sheep{
+    background-color: rgb(255, 255, 255);
+}
+#woman{
+    background-color: lightgreen;
+}
+#penguin{
+    background-color: rgb(27, 238, 245);
 }
 /* <================== Announcements and Trending Sidebar =====================> */

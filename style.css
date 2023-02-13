@@ -142,7 +142,7 @@ li .dashboard_logo{
     align-self: center;
 }
 .search_bar{
-    background-color: antiquewhite;
+    background-color: #FBF5F3;
     flex: 1;
     border-radius: 25px;
     padding: 10px 20px;
@@ -240,7 +240,14 @@ li .dashboard_logo{
 }
 
 .project .nav_bar{
-    background-color: red;
+    display: flex;
+    justify-content: flex-end;
+}
+.project .nav_bar input{
+    width: 30px;
+    height: 30px;
+    margin: 0 8px;
+    margin-top: 10px;
 }
 
 /* <================== Announcements and Trending Sidebar =====================> */
